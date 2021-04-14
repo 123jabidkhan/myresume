@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %} <title>home</title> {% endblock title %}
+{% block content %}
+         <div class="container" style="line-height: 2;">
+             <div style="margin-top: 20px;" class="text-center">
+                 <img class="iamge-fluid" width="250px" height="270px" src="{% static 'core/images/pic2.jpg' %}" alt="profile pic">
+             </div>
+             <h1 class="text-warning">Hello,</h1>
+             <h5 >Lorem, ipsum dolor <b class="text-warning">My Technlogies</b> sit amet consectetur adipisicing elit. Eum dolorum molestias alias incidunt, qui porro debitis placeat? Dolores esse culpa voluptatem <b class="text-warning">My Technlogies</b> suscipit, quas ea quibusdam doloribus consequatur? Dolore, eveniet molestiae!</h5>
+             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe accusamus quibusdam, sunt eos nostrum sapiente delectus architecto iste error harum neque sed omnis quae repellendus culpa aperiam aliquid eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, recusandae nihil non fuga optio sunt dolores similique! Debitis, numquam nihil?</p>
+            
+         </div>
+         <div style="text-align: center;">
+             <a style="padding-left:22px;padding-right:22px;" class="btn btn-outline-warning" href="{% url 'contact' %}">Hire Me</a>
+             <a  class="btn btn-outline-success" href="{% url 'contact' %}">contact Me</a>
+
+         </div>
+{% endblock content %}
+yjytkty

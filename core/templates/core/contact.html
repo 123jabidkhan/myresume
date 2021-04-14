@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %} <title>contact</title> {% endblock title %}
+{% block content %}
+<div class="container">
+    <h1 class="text-warning border-bottom border-warning all_page_heading">Contact</h1>
+    <div style="height: 350px;" class="container border border-secondary  ">
+        <div class="row text-warning contact_row">
+            <div class="col-sm-4 text-center">
+                Enter your Name :
+            </div>
+            <div class="col-sm-8">
+                <input size="80" type="text" placeholder="Enter username" name="uname">
+            </div>
+        </div>
+
+        <div class="row text-warning contact_row">
+            <div class="col-sm-4 text-center">
+                Enter Your City :
+            </div>
+            <div class="col-sm-8">
+                <input size="80" type="text" placeholder="Enter city" name="ucity">
+            </div>
+        </div>
+
+        <div class="row text-warning contact_row">
+            <div class="col-sm-4 text-center">
+                Enter Password :
+            </div>
+            <div class="col-sm-8">
+                <input size="80" type="password" placeholder="Enter password" name="upaas">
+            </div>
+        </div>
+        
+        <div class="row my-3 ml-3 text-center">
+            <div class="col-sm-4 ml-10  ">
+                <a href="" class="btn btn-danger ">SEND</a>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+{% endblock content %}

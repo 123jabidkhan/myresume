@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome limnk -->
+    <link rel="stylesheet" href="{% static 'core/css/all.min.css' %}">
+    <!-- ...Bootstrap link -->
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <!-- ...core css link -->
+    <link rel="stylesheet" href="{% static 'core/css/core.css' %}">
+    {% block title %} <title>other</title> {% endblock title %}
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <!-- firstcolum  -->
+        <div  class="col-sm-2  text-center nav_column ">
+            <div style="height: 200px;margin-top: 40px;" >
+                <img class="image-fluid rounded-circle" width="120" height="120" src="{% static 'core/images/pic2.jpg' %}" alt="">
+                <h2 style="margin-top: 10px;">Jabid Khan</h2>
+            </div>
+            <div>
+                <nav>
+                <a href="/" class="nav-link active">Home</a>
+                <a href="{% url 'service' %}" class="nav-link">Service</a>
+                <a href="{% url 'skills' %}" class="nav-link">Skills</a>
+                <a href="{% url 'contact' %}" class="nav-link">Contact</a>
+
+                </nav>
+            </div>
+        </div>
+        <!-- end first coum -->
+          
+        <!-- second colum -->
+         <div class="col-sm-10">
+             {% block content %}
+            
+             {% endblock content %}
+               
+        </div>
+        <!-- second colum end -->
+
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <script src="{% static 'core/js/popper.js' %}"></script>
+    <script src="{% static 'core/js/jquery.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.js' %}"></script>
+    <script src="{% static 'core/js/all.min.js' %}"></script>
+
+</body>
+
+</html>
